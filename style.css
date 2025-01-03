@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image:url(./exercises/R\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    cursor: pointer;
+    width: 120px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover,a:visited{
+    color: #009688;
+
+}
+
+.content {
+    text-align: left;
+    color: white;
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    margin-left: 8%;
+    padding: 35px 0;
+}
+
+.profile {
+    margin-left: 75%;
+    height: 40vh;
+    width: 35vh;
+    background-size: cover;
+    background: center;
+    display: flex;
+    align-items: center;
+    border-radius: 55%;
+    border: 2px solid black;
+
+
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
+.content h2{
+    color: #009688;
+}
+.content p{
+    font-size: 60;
+    line-height: 25px;
+    margin: 20px auto;
+}
+
+button{
+    width: 200px;
+    padding: 15px ;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+span {
+    background: #009688;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s
+}
+
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.icon {
+    margin-left: 8%;
+    margin-top: 8%;
+    font-size: 20px;
+    padding: 2px;
+}
+.icon i{
+    color: #009688;
+    width: 10px; 
+    align-items: center;
+    margin-left: 3px;
+}
+.icon button{
+    width: 40px;
+    height: 40px;
+    border-radius: 55%;
+    padding: 2px ;
+    border: 2px solid #009688;
+    font-size: 20px;
+    align-items: center;
+    display: inline-flex;
+}
+
+
+/*.wrapper {
+    
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: white;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1) ;
+    width: 420px;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.wrapper h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+.wrapper .input-box {
+
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    margin: 30px 0;
+}
+.input-box input {
+    height: 100%;
+    width: 100%;
+    background:transparent;
+    outline: none;
+    border: none;
+    border: 2px solid rgba(255, 255, 2555, .2);
+    border-radius: 40px;
+    font-size: 20px;
+    padding: 20px 45px 20px 20px;
+    
+    
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+
+}
+
+.remember-forgot label input {
+    color: white;
+    margin-right: 3px;
+}
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    font-size: 16px;
+    color: #333;
+    font-size: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+.wrapper .register-link {
+    text-align: center;
+    margin: 20px 0 15px;
+    font-size: 14.5px;
+}
+.register-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600px;
+}
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/*.container {
+    display: flex;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 700;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px;
+
+}
+
+.header {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -30px;
+}
+.container>div {
+    flex: 200%;
+
+}
+.header, .footer, .div1, .div2{
+    padding: 10px;
+    border : 1px solid black;
+    border-radius: 5px;
+}
+.main, .main1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.main1 {
+    flex: 2;
+}
+.main1>div{
+flex: 1;
+}
+.main2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+}    
+.main2>div {
+    min-height: 160px;
+}
+.footer {
+    min-height: 130px;
+}
+@media screen and (max-width: 768px){
+     .main1{
+        flex: 100%;
+     }
+     .main1>div{
+        min-height: 450px;
+     }
+}
+@media screen and (max-width: 520px) {
+    
+    .main1>div{
+        flex: 100%
+        min-height 350px;
+    }
+}
+    
+
+/*container {
+    background-color: #cacaca;
+    padding: 0px;
+    margin: 2px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    align-content: flex-end;
+    
+}
+
+
+.item {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    flex-grow: 1;
+    justify-content: end;
+    
+}
+
+.items-1 {
+    flex-basis: 600px;
+}*
+
+
+image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%
+    
+
+}
+.image  .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    
+}
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    width: 50%;
+    background-color:white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 5px 5px;
+    
+}
+
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.profile {
+    background-color: white;
+    color: gray;
+    width: 300px;
+    padding: 40px;
+    border: 1px solid gray;
+
+}
+
+/*body{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-areas: 
+    "navbar navbar "
+    "sidebar main"
+    "sidebar footer";
+
+}
+nav{
+    grid-area: navbar;
+}
+aside{
+    grid-area: sidebar;
+    height: 100vh;
+    background-color: grey
+    ;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    padding: 2em;
+
+}
+
+.main {
+    
+        background-color: white;
+        color: gray;
+        width: 600px;
+        padding: 40px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        justify-content: right;
+}
+
+.right {
+    background-color: coral;
+    color: bisque;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
